@@ -50,8 +50,8 @@ let butn = [{
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🐕SCRIPT',
-                                    id: 'sc'
+                                    displayText: '🛒 SEWA BOT',
+                                    id: 'sewabot'
                                 }
                             }]
 
@@ -125,19 +125,19 @@ const wita = moment.tz('Asia/Makassar').format('HH : mm : ss')
 const wit = moment.tz('Asia/Jayapura').format('HH : mm : ss')
 
 const hour_now = moment().format('HH')
-var ucapanWaktu = 'GOOD MORNING'
+var ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🌄'
 if (hour_now >= '03' && hour_now <= '10') {
-ucapanWaktu = 'GOOD MORNING'
+ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🌅'
 } else if (hour_now >= '10' && hour_now <= '14') {
-ucapanWaktu = 'GOOD AFTERNOON '
+ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🌞'
 } else if (hour_now >= '14' && hour_now <= '17') {
-ucapanWaktu = 'GOOD AFTERNOON️'
+ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐨𝐫𝐞 ☀️'
 } else if (hour_now >= '17' && hour_now <= '18') {
-ucapanWaktu = 'GOOD NIGHT🌠'
+ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌠'
 } else if (hour_now >= '18' && hour_now <= '23') {
-ucapanWaktu = 'GOOD NIGHT🌌'
+ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'
 } else {
-ucapanWaktu = '🌚❤️'//'Selamat Malam!'
+ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦'//'Selamat Malam!'
 }
 
 
@@ -149,16 +149,16 @@ const reply = async(teks) => {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                ppumser = await getBuffer(ppuser)
-               hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname}`,"body": `PUKA BOT MD`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": ppumser, "sourceUrl": `https://wa.me/94771323434`}}}, { quoted: m})
+               hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname} ${ucapanWaktu}`,"body": `𝐽𝑎𝑛𝑔𝑎𝑛 𝐿𝑢𝑝𝑎 𝑆𝑎𝑣𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟 𝑀𝑒`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": ppumser, "sourceUrl": `https://wa.me/6282194424412`}}}, { quoted: m})
         }     
         
 const replay = (teks) => {
-            hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname}`,"body": `Huuuuu`, "previewType": "PHOTO","thumbnailUrl": `https://chat.whatsapp.com/HYVx0YL6dTz7SeVzQ1Lak5`,"thumbnail": fs.readFileSync(`./media/Lycho.jpg`),"sourceUrl": ``}}}, { quoted: m})
+            hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname} ${ucapanWaktu}`,"body": `Huuuuu`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/Lycho.jpg`),"sourceUrl": `https://chat.whatsapp.com/KN91ApM2kIR09qRbiuXfEf`}}}, { quoted: m})
         }
 	
 
 //QUOTED
-const troli = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282363250061-1627622544@g.us" } : {})},message: {orderMessage: {itemCount : 2022, status: 1,surface : 2,message: ` Hii ${pushname}\nPUKA BOT MD`,orderTitle: `Hi UTTO`,thumbnail: fs.readFileSync('./media/Lycho.jpg'), sellerJid: `0@s.whatsapp.net`}}}
+const troli = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282363250061-1627622544@g.us" } : {})},message: {orderMessage: {itemCount : 2022, status: 1,surface : 2,message: ` Hii ${pushname}\n𝐶𝑟𝑒𝑎𝑡𝑒𝑑 𝐵𝑦 𝑡𝑎𝑘𝑖𝑚-𝑡𝑜𝑑`,orderTitle: `Hi kak`,thumbnail: fs.readFileSync('./media/Lycho.jpg'), sellerJid: `0@s.whatsapp.net`}}}
 const fkontak2 = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282363250061-1627622544@g.us" } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/Lycho.jpg')}}}
 
 
@@ -251,8 +251,8 @@ const sendStickerUrl = async(to, url) => {
 		autobio: false,
 		autoread: false,
 		autoketik: false,
-		autorecord: true,
-		autoonline: true,
+		autorecord: false,
+		autoonline: false,
 		autooffline: false,
 	    }
         } catch (err) {
@@ -267,7 +267,7 @@ const sendStickerUrl = async(to, url) => {
       
        // Detect User Banned
         if (ban[m.sender] && isCmd) {
-            await hisoka.sendText(m.chat, `Boss @${m.sender.split("@")[0]} Un Banned`, m, { contextInfo: { mentionedJid: [m.sender] }})
+            await hisoka.sendText(m.chat, `Maaf @${m.sender.split("@")[0]} Anda Telah Dibanned, Chat Owner Untuk Un Banned`, m, { contextInfo: { mentionedJid: [m.sender] }})
             return
         }
 
@@ -325,7 +325,7 @@ const levelRole = getLevelingLevel(m.sender)
 	    let setting = global.db.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await hisoka.setStatus(`Hello I am a bot👋🏻 || Runtime: ${runtime(process.uptime())} || DATE: ${dateIslamic} || User : IMASH`)
+		await hisoka.setStatus(`Hello I am a bot👋🏻 || 🏃Runtime: ${runtime(process.uptime())} || 🕌Tanggal Islam: ${dateIslamic} || User : KahfzXzy`)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -721,21 +721,20 @@ reply(mess.wait)
                     ini_txt += `Isya : ${get_result.isya}`
                     reply(ini_txt)
                     break
-                    
 
                     // Downloader //
                 
                 
                 case 'tiktokmusic': case 'tiktokaudio': case 'tiktokmp3':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/Z5o/`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
                     ini_link = args[0]
                     get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=${apikey}&url=${ini_link}`)
                     hisoka.sendMessage(m.chat, {audio: get_audio, mimetype: 'audio/mpeg', fileName: `${q}.mp3`}, { quoted : m })
                     break
                 case 'spotify':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://open.spotify.com/track/0ZEYRVISCaWZWzaA`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://open.spotify.com/track/0ZEYRVISCaqz5yamWZWzaA`)
                     url = args[0]
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotify?apikey=${apikey}&url=${url}`)
                     get_result = get_result.result
@@ -751,7 +750,7 @@ reply(mess.wait)
                     break
                 case 'spotifysearch':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} adaraya agamaki`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/spotifysearch?apikey=${apikey}&query=${query}`)
                     get_result = get_result.result
@@ -767,7 +766,7 @@ reply(mess.wait)
                     break
                 case 'jooxplay':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} adaraya agamaki`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Melukis Senja`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/jooxplay?apikey=${apikey}&query=${query}`)
                     get_result = get_result.result
@@ -786,8 +785,8 @@ reply(mess.wait)
                 
 case 'ig':
 reply (mess.wait)
-if (!q) return reply ('Link?')
-igreel = q.includes("https://www.instagram.com/rel/")
+if (!q) return reply ('Linknya?')
+igreel = q.includes("https://www.instagram.com/reel/")
 
 if(igreel){
 Download.insta_reel(q).then(async (data) => {
@@ -809,8 +808,8 @@ break
 
 case 'ig2':
 reply (mess.wait)
-if (!q) return reply ('Link?')
-igreel = q.includes("https://www.instagram.com/rel/")
+if (!q) return reply ('Linknya?')
+igreel = q.includes("https://www.instagram.com/reel/")
 
 if(igreel){
 Download.insta_reel(q).then(async (data) => {
@@ -832,7 +831,7 @@ break
 
                 case 'twtdl':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://twitter.com/gofoodindonesia/status/122981709697`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://twitter.com/gofoodindonesia/status/1229369819511709697`)
                     ini_url = args[0]
                     ini_url = await fetchJson(`https://api.lolhuman.xyz/api/twitter?apikey=${apikey}&url=${ini_url}`)
                     ini_url = ini_url.result
@@ -842,7 +841,7 @@ break
                     break
                 case 'fbdl':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://id-id.facebook.com/SamsungGulf/videos/videoh/5608457758458/`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://id-id.facebook.com/SamsungGulf/videos/video-bokeh/561108457758458/`)
                     ini_url = args[0]
                     ini_url = await fetchJson(`https://api.lolhuman.xyz/api/facebook?apikey=${apikey}&url=${ini_url}`)
                     ini_url = ini_url.result[0].link
@@ -851,7 +850,7 @@ break
                     break
                 case 'zippyshare':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://www51.zippyshare.com/v/5WOBz1/fihtml`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://www51.zippyshare.com/v/5W0TOBz1/file.html`)
                     ini_url = args[0]
                     ini_url = await fetchJson(`https://api.lolhuman.xyz/api/zippyshare?apikey=${apikey}&url=${ini_url}`)
                     ini_url = ini_url.result
@@ -885,7 +884,7 @@ break
                     break
                 case 'pinterestdl':
                 reply(mess.wait)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://id.pinterest.com/pin/696580267426905/`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://id.pinterest.com/pin/696580267364426905/`)
                     ini_url = args[0]
                     ini_url = await fetchJson(`https://api.lolhuman.xyz/api/pinterestdl?apikey=${apikey}&url=${ini_url}`)
                     ini_url = ini_url.result[0]
@@ -925,7 +924,7 @@ break
                 case 'xhamster':
                 reply(mess.wait)
                 if (!isPremium && !mek.key.fromMe && !isCreator) return reply(mess.prem)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} https://xhamster.com/videos/party-with-friends-end-in-awesom798407`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} https://xhamster.com/videos/party-with-friends-end-in-awesome-fucking-5798407`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/xhamster?apikey=${apikey}&url=${query}`)
                     get_result = get_result.result
@@ -1013,7 +1012,7 @@ break
                 case 'manga':
                 reply(mess.wait)
                 if (!isPremium && !mek.key.fromMe && !isCreator) return reply(mess.prem)
-                    if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubnayome`)
+                    if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/manga?apikey=${apikey}&query=${query}`)
                     get_result = get_result.result
@@ -1293,7 +1292,7 @@ break
                     break
 
                     // Information //
-         /*       case 'kbbi':
+                case 'kbbi':
                 reply(mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} kursi`)
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/kbbi?apikey=${apikey}&query=${args.join(" ")}`)
@@ -1608,7 +1607,6 @@ break
                     }
                     reply(ini_txt)
                     break
-                    */
                 
 
                     // Movie & Story
@@ -1633,7 +1631,7 @@ break
                     thumbnail = await getBuffer(get_result.thumbnail)
                     await hisoka.sendMessage(m.chat, { image: thumbnail, caption: ini_txt }, { quoted: m})                  
                     break
-          /*      case 'drakorongoing':
+                case 'drakorongoing':
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/drakorongoing?apikey=${apikey}`)
                     get_result = get_result.result
                     ini_txt = "Ongoing Drakor\n\n"
@@ -1699,9 +1697,9 @@ break
                     thumbnail = await getBuffer(get_result.thumbnail)
                     await hisoka.sendMessage(m.chat, { image: thumbnail, caption: ini_txt }, { quoted: m})                  
                     break
-*/
+
                     // Random Text //
-  /*              case 'quotes':
+                case 'quotes':
                     quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=${apikey}`)
                     quotes = quotes.result
                     author = quotes.by
@@ -1735,8 +1733,7 @@ break
                 case 'randomnama':
                     anu = await fetchJson(`https://api.lolhuman.xyz/api/random/nama?apikey=${apikey}`)
                     reply(anu.result)
-                    break 
-                    */
+                    break
 
                     // Searching
                 case 'gimage':
@@ -1794,7 +1791,7 @@ break
                     }
                     reply(ini_txt)
                     break
-             /*   case 'shopee':
+                case 'shopee':
                     if (args.length == 0) return reply(`Example: ${prefix + command} tas gendong`)
                     query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/shopee?apikey=${apikey}&query=${query}`)
@@ -1808,7 +1805,7 @@ break
                         ini_txt += `Link : ${x.link_produk}\n\n`
                     }
                     reply(ini_txt)
-                    break */
+                    break
                 case 'google':
                     if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
                     query = args.join(" ")
@@ -1825,7 +1822,7 @@ break
                 
 
                     // Primbon
-       /*         case 'artinama':
+                case 'artinama':
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_nama = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/artinama?apikey=${apikey}&nama=${ini_nama}`)
@@ -1881,7 +1878,6 @@ return reply (`eorr`)}
                     ini_txt += `Umur : ${get_result.age}`
                     reply(ini_txt)
                     break
-                    */
 
                     // Entertainment
                 case 'asupan':
@@ -2232,12 +2228,12 @@ ini_txt = args.join(" ")
  break
 
 
-/*
+
 
 
 case 'developer':
 let developer = [
-                            { "nama": "T A K I M", "nomor": "94771323434" },
+                            { "nama": "T A K I M", "nomor": "6282194424412" },
                             { "nama": "D I K A", "nomor": "6288292024190" },
                             { "nama": "K A H F Z", "nomor": "6283127014833" },
                             ]
@@ -2272,7 +2268,6 @@ case 'malingpp': {
         hisoka.sendMessage(m.chat, { image: { url: anu, caption: 'Nih', quoted: m }})
        }
 break
-*/
 
 case 'loli': 
            case 'neko': 
@@ -2339,7 +2334,7 @@ case 'loli':
                     templateMessage: {
                         hydratedTemplate: {
                             videoMessage: message.videoMessage,
-                            hydratedContentText: `Download Video Tiktok`,
+                            hydratedContentText: `Berhasil Download Video Tiktok`,
                             hydratedFooterText: `${global.footer}`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -2358,7 +2353,7 @@ case 'loli':
             }
             break
             
-/*
+
 case 'sound1':case 'sound2':
 case 'sound3':case 'sound4':case 'sound5':case 'sound6':
 case 'sound7':case 'sound8':case 'sound9':case 'sound10':
@@ -2382,7 +2377,7 @@ ini_buffer = await getBuffer(`https://github.com/saipulanuar/Api-Github/raw/main
 hisoka.sendMessage(m.chat, {audio: ini_buffer, mimetype:'audio/mpeg', ptt:true }, {quoted:m})
 break
 
-*/
+
 
 
 
@@ -2395,7 +2390,7 @@ break
 //============================[ ]=============================
 
 
-/*
+
 
 case'readmore': case 'more':
 const more = String.fromCharCode(8206)
@@ -2507,7 +2502,6 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
             }
             }
             break
-            */
             
 case 'delttc': case 'delttt': {
        	if (!m.isGroup) return reply(mess.group)
@@ -2524,7 +2518,7 @@ case 'delttc': case 'delttt': {
             }
             }
             break
-            /*
+            
 case 'suitpvp': case 'suit': {
 	if (!m.isGroup) return reply(mess.group)
             this.suit = this.suit ? this.suit : {}
@@ -2554,11 +2548,12 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             }
             break
-	    */
+	    
             
 case 'sc': {
                 reply(`
-PRIVET SCRIPT🐕
+👾 Script Ori : https://github.com/DikaArdnt/Hisoka-Morou
+🌐 Penyusun Script : Takimtod && KahfzXzyy
 `)
             }
             break
@@ -2582,7 +2577,7 @@ PRIVET SCRIPT🐕
                 }
             }
             break
-	/*    case 'family100': {
+	    case 'family100': {
 		if (!m.isGroup) return reply(mess.group)
                 if ('family100'+m.chat in _family100) {
                     reply('Masih Ada Sesi Yang Belum Diselesaikan!')
@@ -2746,10 +2741,9 @@ PRIVET SCRIPT🐕
                     await hisoka.sendButtonText(m.chat, buttons, jawab, hisoka.user.name, m, {mentions: menst})
             }
             break
-            */
             case 'join': {
                 if (!isCreator) return reply(mess.owner)
-                if (!text) throw 'Link Group!'
+                if (!text) throw 'Masukkan Link Group!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
                 reply(mess.wait)
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -2762,7 +2756,7 @@ PRIVET SCRIPT🐕
             }
             break
 	case 'kick': {
-		reply (`h Kick :v`)
+		reply (`Asek Dapat Jatah Kick :v`)
 		if (!m.isGroup) return reply(mess.group)
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -2896,8 +2890,8 @@ Anti wa.me : *${db.chats[m.chat].wame ? 'Aktif✅' : 'Mati❌'}*
 *ID Grup :* ${m.chat}
 *Dibuat :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}
 *Owner Grup :* @${groupMetadata.owner.split('@')[0]}
-*Admin :* ${groupAdmins.length}
-*Members:* ${participants.length}
+*Jumlah Admin :* ${groupAdmins.length}
+*Jumlah Peserta :* ${participants.length}
 *Desc :* 
 ${groupMetadata.desc}`
 ds = await getBuffer(pic)
@@ -2922,7 +2916,7 @@ let teks = `══✪〘 *👥 Tag All* 〙✪══
             hisoka.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
-	/*    case 'style': case 'styletext': {      
+	    case 'style': case 'styletext': {      
 		db.users[m.sender].limit -= 1 // -1 limit
 		let { styletext } = require('./lib/scraper')
 		if (!text) throw 'Masukkan Query text!'
@@ -3096,7 +3090,6 @@ break
             reply('Berhasil Menghapus Sesi Vote Di Grup Ini')
 	    }
             break
-            */
                case 'group': case 'grup': {
                 if (!m.isGroup) return reply(mess.group)
                 if (!isBotAdmins) throw mess.botAdmin
@@ -3288,7 +3281,7 @@ case 'autoread': {
                     let btn = [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑴𝒆',
-                                    url: 'https://wa.me/94771323434'
+                                    url: 'https://wa.me/6282194424412'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3355,7 +3348,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
 		    let btn = [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑴𝒆',
-                                    url: 'https://wa.me/94771323434'
+                                    url: 'https://wa.me/6282194424412'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3382,7 +3375,7 @@ case 'bctext': {
 		    let btn = [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑴𝒆',
-                                    url: 'https://wa.me/94771323434'
+                                    url: 'https://wa.me/6282194424412'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3412,7 +3405,7 @@ case 'bctext': {
                 hisoka.sendTextWithMentions(m.chat, teks, m)
             }
             break
-  /*          case 'q': case 'quoted': {
+            case 'q': case 'quoted': {
 		if (!m.quoted) return reply('Reply Pesannya!!')
 		let wokwol = await hisoka.serializeM(await m.getQuotedObj())
 		if (!wokwol.quoted) return reply('Pesan Yang anda reply tidak mengandung reply')
@@ -3438,8 +3431,7 @@ case 'bctext': {
                  }
                  hisoka.sendTextWithMentions(m.chat, teks, m)
              }
-             break 
-             */
+             break
              case 'listonline': case 'liston': {
                     let id = args && /\d+\-\d+@g.us/.test(args[0]) ? args[0] : m.chat
                     let online = [...Object.keys(store.presences[id]), botNumber]
@@ -3507,7 +3499,7 @@ break
                 }
             }
             break
-   /*         case 'ebinary': {
+            case 'ebinary': {
             if (!m.quoted.text && !text) throw `Kirim/reply text dengan caption ${prefix + command}`
             let { eBinary } = require('./lib/binary')
             let teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
@@ -3523,7 +3515,6 @@ break
             reply(db)
         }
         break
-        */
             case 'emojimix': {
 	        if (!text) throw `Example : ${prefix + command} 😅+🤔`
 		let [emoji1, emoji2] = text.split`+`
@@ -3816,7 +3807,7 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
             break
 /*LOGO NYAAA !!!!
 */
-/*case 'nuliskiri': {
+case 'nuliskiri': {
                 if (args.length < 1) return await reply(`Example: ${prefix + command} KahfzXy`)
                 reply("Tunggu Sebentar, Sedang Proses....")
                 kahfz = await getBuffer(`https://hardianto.xyz/api/nuliskiri?text=${text}&apikey=hardianto`)
@@ -3954,10 +3945,9 @@ case 'cecan': {
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
                 break
-	
-
+/*
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-          /*  case 'wallpaper': {
+            case 'wallpaper': {
                 if (!text) throw 'Mau Cari Walpaper apakak?'
 		let { wallpaper } = require('./lib/scraper')
                 anu = await wallpaper(text)
@@ -4145,7 +4135,6 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: anu }, caption: 'Nih Gan' }, { quoted: m })
              }
              break
-             */
 //[ Maker Menu ]//
 
 
@@ -4255,7 +4244,7 @@ let buttons = [
                 }
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
 break
-	 /*   case 'shadow': case 'romantic': case 'smoke': case 'burnpapper': case 'naruto': case 'lovemsg': case 'grassmsg': case 'lovetext': case 'coffecup': case 'butterfly': case 'harrypotter': case 'retrolol': {
+	    case 'shadow': case 'romantic': case 'smoke': case 'burnpapper': case 'naruto': case 'lovemsg': case 'grassmsg': case 'lovetext': case 'coffecup': case 'butterfly': case 'harrypotter': case 'retrolol': {
                 if (!text) throw 'No Query Text'
                 reply(mess.wait)
                 hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/photooxy/' + command, { text: text }, 'apikey') }, caption: `Photo Oxy ${command}` }, { quoted: m })
@@ -4268,7 +4257,7 @@ break
             }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
-                if (!Number(text)) throw `Example : ${prefix + command} 94771323434`
+                if (!Number(text)) throw `Example : ${prefix + command} 6282194424412`
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
                 hisoka.sendText(m.chat, `┋➟ *Nomor HP :* ${anu.message.nomer_hp}\n┋➟ *Angka Shuzi :* ${anu.message.angka_shuzi}\n┋➟ *Energi Positif :*\n- Kekayaan : ${anu.message.energi_positif.kekayaan}\n- Kesehatan : ${anu.message.energi_positif.kesehatan}\n- Cinta : ${anu.message.energi_positif.cinta}\n- Kestabilan : ${anu.message.energi_positif.kestabilan}\n- Persentase : ${anu.message.energi_positif.persentase}\n┋➟ *Energi Negatif :*\n- Perselisihan : ${anu.message.energi_negatif.perselisihan}\n- Kehilangan : ${anu.message.energi_negatif.kehilangan}\n- Malapetaka : ${anu.message.energi_negatif.malapetaka}\n- Kehancuran : ${anu.message.energi_negatif.kehancuran}\n- Persentase : ${anu.message.energi_negatif.persentase}`, m)
@@ -4546,7 +4535,7 @@ case 'zippyshare': case 'zippydl': {
                 hisoka.sendMedia(m.chat, anu.link, '', m)
             }
             break
-			*/
+			
            
             case 'joox': case 'jooxdl': {
                 if (!text) throw 'No Query Title'
@@ -4679,7 +4668,7 @@ Format yang tersedia : pdf, docx, pptx, xlsx`)
 		}
 		}
 		break
-		/*case 'hadis': case 'hadist': {
+		case 'hadis': case 'hadist': {
 		if (!args[0]) throw `Contoh:
 ${prefix + command} bukhari 1
 ${prefix + command} abu-daud 1
@@ -4741,7 +4730,7 @@ ${id}`)
 ( Q.S ${res.result.data.surah.name.transliteration.id} : ${res.result.data.number.inSurah} )`
 		reply(txt)
 		}
-		break */
+		break
 /*case 'alkitab': 
 if(!text) throw `Masukan Search Yang Anda Cari`
 epep = await.fetchJson(`https://melcanz.com/alkitabsearch?q=${text}&apikey=melcantik`)
@@ -5130,8 +5119,8 @@ case 'creator': {
             }
             break
                   case 'reportbug': case 'bug': case 'report': {
-                    	if(!text) throw `Masukan Bug \n\n${command} Menu Error `
-                    	hisoka.sendMessage(`94771323434@s.whatsapp.net`, {text: `*Bug Report Dari:* wa.me/${m.sender.split("@")[0]}
+                    	if(!text) throw `Masukan Bug Nya Contoh\n\n${command} Menu Error `
+                    	hisoka.sendMessage(`6282194424412@s.whatsapp.net`, {text: `*Bug Report Dari:* wa.me/${m.sender.split("@")[0]}
 _Pesan Report:_ ${text}` })
 reply(` Sukses Lapor ${command} Kepada Owner Silahkan Tunggu Dalam Waktu 24 Jam\n\nJika Main - Main Dengan Fitur Ini Maka Anda Mendapatkan Block Nomor Selama 2 Hari !`)
                     }
@@ -5142,28 +5131,42 @@ case 'tes':
 reply(`On bang`)
 break
 case 'rules':
-reply(` *DONT CALL BOT 
+reply(` *SYARAT KETENTUAN BOTZ
+
+1. ❌ DI LARANG MENYEPAM BOT DENGAN BUTTON YANG TERSEDIA
+SANKSI = BLOCK 1 HARI ✅
+
+2. ❌ DI LARANG SPAM BUG / VIRTEX DLL😡 
+SANKSI = BLOCK ✅
+
+3. ❌ DILARANG MEMBANDINGKAN BOT 😞 
+SANKSI = BANNED ✅
+
+4. ❌ DILARANG CALL BOT 
 SANKSI = BLOCK ✅
       ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏
+ANDA DAPAT MENYEWA BOT INI KEDALAM GRUB SILAHKAN CHAT NO. OWNER DENGAN KETIK .owner
 `)
      break
-/*case 'tambahlimit': 
+case 'tambahlimit': 
 if (!global.db.users[m.sender].limit < 1) return reply(`S u k s e s Menambah Limit`) // respon ketika limit habis
 db.users[m.sender].limit += 1
 break
 case 'ceklimit': 
 reply(`Limit Kamu : *${global.db.users[m.sender].limit}*`)
 break
-            */
+            
 case 'list': case 'menu': case 'help': case '?': {
            	if (modelmenu == 'location') {
                 anu = `
 Hi ${pushname}
+Semoga Harimu Menyenangkan
 
+Limit Kamu : *${global.db.users[m.sender].limit}*
 
-Limit : *${global.db.users[m.sender].limit}*
-
- ${global.ownernma}
+Saya Adalah Bot Whatsapp Ciptaan ${global.ownernma}
+Dan Kamu Adalah Pengguna Bot Ini 
+Silahkan Gunakan Bot Dengan Bijak 🥰
 
 `
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -5176,7 +5179,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '𝑹𝒆𝒑𝒐𝒓𝒕 𝑩𝒖𝒈',
-                                    url: 'https://wa.me/94771323434?text=Bang+Lapor+Ada+Bug'
+                                    url: 'https://wa.me/6282194424412?text=Bang+Lapor+Ada+Bug'
                                 }
                             }, {
                             	urlButton: {
@@ -5190,7 +5193,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }           
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'CMD 𝐁𝐨𝐭',
+                                    displayText: '𝐕𝐢𝐭𝐮𝐫 𝐁𝐨𝐭',
                                     id: `${prefix}command`
                                 }                               
                             }]
@@ -5205,17 +5208,18 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ────[USER INFO]────
 Nama : ${pushname}
 Nomor : _wa.me/${m.sender.split("@")[0]}_
-Limit : *${global.db.users[m.sender].limit}*
+Limit Kamu : *${global.db.users[m.sender].limit}*
 ────────────────────────
 
 ────[BOT INFO]────
  *› Library :* _Baileys MD_
  *› Runtime :* _${runtime(process.uptime())}_
+ *› Hijriah :* _${dateIslamic}_
 ────────────────────────
 
 ──────[ *_LIST MENU_* ]───────
 
-🛠️ *Random 
+🛠️ *Random Vitur
 ${pref++} ${prefix}readmore
 
 
@@ -5250,6 +5254,14 @@ ${pref++} ${prefix}playstore    _<teks>_
 
 
 
+🛒 *Store*
+
+${pref++} ${prefix}sewabot    _<teks>_
+${pref++} ${prefix}jadibot    _<teks>_
+${pref++} ${prefix}jasarun    _<teks>_
+${pref++} ${prefix}masukgc    _<teks>_
+
+
 
 🔍 *Search Menu*
 
@@ -5280,6 +5292,25 @@ ${pref++} ${prefix}heroml
 ${pref++} ${prefix}genshin
 ${pref++} ${prefix}wikipedia    _<teks>_
 
+
+
+🎐 *Quotes Menu*
+
+${pref++} ${prefix}quotes
+${pref++} ${prefix}quotesanime
+${pref++} ${prefix}quotesdilan
+${pref++} ${prefix}quotesimage
+${pref++} ${prefix}faktaunik
+${pref++} ${prefix}katabijak
+${pref++} ${prefix}pantun
+${pref++} ${prefix}bucin
+${pref++} ${prefix}coffe
+${pref++} ${prefix}quotesanime
+${pref++} ${prefix}motivasi
+${pref++} ${prefix}dilanquote
+${pref++} ${prefix}bucinquote
+${pref++} ${prefix}katasenja
+${pref++} ${prefix}puisi
 
 
 
@@ -5461,9 +5492,60 @@ ${pref++} ${prefix}freefire
 
 
 
+✈️ *Fun Menu*
+
+${pref++} ${prefix}halah
+${pref++} ${prefix}hilih
+${pref++} ${prefix}huluh
+${pref++} ${prefix}heleh
+${pref++} ${prefix}holoh
+${pref++} ${prefix}jadian
+${pref++} ${prefix}delttt
+${pref++} ${prefix}tictactoe
+${pref++} ${prefix}family100
+${pref++} ${prefix}tebak [option]
+${pref++} ${prefix}math [mode]
+${pref++} ${prefix}suitpvp [@tag]
 
 
 
+📑 *Primbon Menu*
+
+${pref++} ${prefix}randomnama    _<teks>_
+${pref++} ${prefix}jodoh
+${pref++} ${prefix}weton
+${pref++} ${prefix}jadian
+${pref++} ${prefix}tebakumur
+${pref++} ${prefix}nomorhoki
+${pref++} ${prefix}artimimpi
+${pref++} ${prefix}artinama
+${pref++} ${prefix}ramaljodoh
+${pref++} ${prefix}ramaljodohbali
+${pref++} ${prefix}suamiistri
+${pref++} ${prefix}ramalcinta
+${pref++} ${prefix}cocoknama
+${pref++} ${prefix}pasangan
+${pref++} ${prefix}jadiannikah
+${pref++} ${prefix}sifatusaha
+${pref++} ${prefix}rezeki
+${pref++} ${prefix}pekerjaan
+${pref++} ${prefix}nasib
+${pref++} ${prefix}penyakit
+${pref++} ${prefix}tarot
+${pref++} ${prefix}fengshui
+${pref++} ${prefix}haribaik
+${pref++} ${prefix}harisangar
+${pref++} ${prefix}harisial
+${pref++} ${prefix}nagahari
+${pref++} ${prefix}arahrezeki
+${pref++} ${prefix}peruntungan
+${pref++} ${prefix}weton
+${pref++} ${prefix}karakter
+${pref++} ${prefix}keberuntungan
+${pref++} ${prefix}memancing
+${pref++} ${prefix}masasubur
+${pref++} ${prefix}zodiak
+${pref++} ${prefix}shio
 
 
 
@@ -5502,6 +5584,83 @@ ${pref++} ${prefix}nekopoisearch    _<teks>_   Ⓟ︎
 
 
 
+🎧 *Random Sound*
+────────────────────────
+${pref++} ${prefix}sound1
+${pref++} ${prefix}sound2
+${pref++} ${prefix}sound3
+${pref++} ${prefix}sound4
+${pref++} ${prefix}sound5
+${pref++} ${prefix}sound6
+${pref++} ${prefix}sound7
+${pref++} ${prefix}sound8
+${pref++} ${prefix}sound9
+${pref++} ${prefix}sound10
+${pref++} ${prefix}sound11
+${pref++} ${prefix}sound12
+${pref++} ${prefix}sound13
+${pref++} ${prefix}sound14
+${pref++} ${prefix}sound15
+${pref++} ${prefix}sound16
+${pref++} ${prefix}sound17
+${pref++} ${prefix}sound18
+${pref++} ${prefix}sound19
+${pref++} ${prefix}sound20
+${pref++} ${prefix}sound21
+${pref++} ${prefix}sound22
+${pref++} ${prefix}sound23
+${pref++} ${prefix}sound24
+${pref++} ${prefix}sound25
+${pref++} ${prefix}sound26
+${pref++} ${prefix}sound27
+${pref++} ${prefix}sound28
+${pref++} ${prefix}sound29
+${pref++} ${prefix}sound30
+${pref++} ${prefix}sound31
+${pref++} ${prefix}sound32
+${pref++} ${prefix}sound33
+${pref++} ${prefix}sound34
+${pref++} ${prefix}sound35
+${pref++} ${prefix}sound36
+${pref++} ${prefix}sound37
+${pref++} ${prefix}sound38
+${pref++} ${prefix}sound39
+${pref++} ${prefix}sound40
+${pref++} ${prefix}sound41
+${pref++} ${prefix}sound42
+${pref++} ${prefix}sound43
+${pref++} ${prefix}sound44
+${pref++} ${prefix}sound45
+${pref++} ${prefix}sound46
+${pref++} ${prefix}sound47
+${pref++} ${prefix}sound48
+${pref++} ${prefix}sound49
+${pref++} ${prefix}sound50
+${pref++} ${prefix}sound51
+${pref++} ${prefix}sound52
+${pref++} ${prefix}sound53
+${pref++} ${prefix}sound54
+${pref++} ${prefix}sound55
+${pref++} ${prefix}sound56
+${pref++} ${prefix}sound57
+${pref++} ${prefix}sound58
+${pref++} ${prefix}sound59
+${pref++} ${prefix}sound60
+${pref++} ${prefix}sound61
+${pref++} ${prefix}sound62
+${pref++} ${prefix}sound63
+${pref++} ${prefix}sound64
+${pref++} ${prefix}sound65
+${pref++} ${prefix}sound66
+${pref++} ${prefix}sound67
+${pref++} ${prefix}sound68
+${pref++} ${prefix}sound69
+${pref++} ${prefix}sound70
+${pref++} ${prefix}sound71
+${pref++} ${prefix}sound72
+${pref++} ${prefix}sound73
+${pref++} ${prefix}sound74
+
 
 
 📁 *Database Menu*
@@ -5527,6 +5686,34 @@ ${pref++} ${prefix}sendkontak
 
 
 
+🕌 *Islamic Menu*
+
+${pref++} ${prefix}iqra
+${pref++} ${prefix}hadist
+${pref++} ${prefix}alquran
+${pref++} ${prefix}juzamma
+${pref++} ${prefix}tafsirsurah
+${pref++} ${prefix}listsurah
+${pref++} ${prefix}asmaulhusna
+${pref++} ${prefix}kisahnabi   _<Muhammad>_
+${pref++} ${prefix}jadwalsholat   _<Makassar>_
+
+
+
+📺 *Jadwal Tv && Berita*
+
+${pref++} ${prefix}jadwaltv    _<teks>_
+${pref++} ${prefix}jadwaltvnow
+${pref++} ${prefix}newsinfo
+${pref++} ${prefix}jadwalbola
+${pref++} ${prefix}indbeasiswa
+${pref++} ${prefix}hoax
+${pref++} ${prefix}cnnindonesia
+${pref++} ${prefix}cnnnasional
+${pref++} ${prefix}cnninternasional
+${pref++} ${prefix}infogempa    _<nama daerah>_
+${pref++} ${prefix}covidindo
+${pref++} ${prefix}covidglobal
 
 
 
@@ -5771,8 +5958,8 @@ ${pref++} ${prefix}autoketik On/Off
                                 }           
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Script Bot',
-                                    id: `${prefix}sc`
+                                    displayText: 'Sewa Bot',
+                                    id: `${prefix}sewabot`
                                     }
                             }]
                         }
@@ -5998,18 +6185,20 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 break
 
 
-case 'allmenu123': {
+case 'allmenu': {
 pref = 1
 anu = `
 ────[USER INFO]────
 Nama : ${pushname}
 Nomor : _wa.me/${m.sender.split("@")[0]}_
-Limit  : *${global.db.users[m.sender].limit}*
+Limit Kamu : *${global.db.users[m.sender].limit}*
 ────────────────────────
 
 ────[BOT INFO]────
  *› Library :* _Baileys MD_
  *› Runtime :* _${runtime(process.uptime())}_
+ *› Hijriah :* _${dateIslamic}_
+────────────────────────
 
 ──────[ *_LIST MENU_* ]───────
 
@@ -6843,6 +7032,28 @@ hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
 break 
 
+
+case 'ranomquotes': {
+kimt = `
+🎐 *Quotes Menu*
+────────────────────────
+
+ ≻ ${prefix}quotes
+ ≻ ${prefix}quotesanime
+ ≻ ${prefix}quotesdilan
+ ≻ ${prefix}quotesimage
+ ≻ ${prefix}faktaunik
+ ≻ ${prefix}katabijak
+ ≻ ${prefix}pantun
+ ≻ ${prefix}bucin
+ ≻ ${prefix}coffe
+ ≻ ${prefix}quotesanime
+ ≻ ${prefix}motivasi
+ ≻ ${prefix}dilanquote
+ ≻ ${prefix}bucinquote
+ ≻ ${prefix}katasenja
+ ≻ ${prefix}puisi
+`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -7941,7 +8152,7 @@ hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
 break 
 
 
-/*case 'donasi': {
+case 'donasi': {
 	let btns = [{
                                 urlButton: {
                                     displayText: `${global.ganti}`,
@@ -7962,10 +8173,10 @@ OVO : CHAT OWNER
 
 ISI NOMINAL - TF - SCREENSHOT KE OWNER BIAR DPET FREE PREMUM !! `, `${global.footer}`, btns)
 }
-break*/
+break
 
 
-/*case 'sewabot': {
+case 'sewabot': {
 	let btns = [{
                                 urlButton: {
                                     displayText: `${global.ganti}`,
@@ -7997,9 +8208,8 @@ break*/
 Silahkan Pilih Salah Satu Di Atas`, `${global.footer}`, btns)
 }
 break
-*/
 
-/*case 'jadibot': {
+case 'jadibot': {
 	let btns = [{
                                 urlButton: {
                                     displayText: `${global.ganti}`,
@@ -8031,13 +8241,13 @@ break
 ┗━━⬣
 
 ┏━━⬣ ??𝐡𝐚𝐭 𝐌𝐞
-┃🎀 : wa.me/94771323434
+┃🎀 : wa.me/6282194424412
 ┃🎀 : Instagram : *@Zyee_ez*
 ┗━━⬣ `, `${global.footer}`, btns)
 }
 break
-*/
-/*case 'masukgc': {
+
+case 'masukgc': {
 	let btns = [{
                                 urlButton: {
                                     displayText: `${global.ganti}`,
@@ -8066,7 +8276,7 @@ break
 ┗━━⬣
 
 ┏━━⬣ 𝐂𝐡𝐚𝐭 𝐌𝐞
-┃🎀 : wa.me/94771323434
+┃🎀 : wa.me/6282194424412
 ┃🎀 : Instagram : *@Zyee_ez*
 ┗━━⬣ 
 
@@ -8103,7 +8313,7 @@ case 'jasarun': {
 ┗━━⬣
 
 ┏━━⬣ 𝐂𝐡𝐚𝐭 𝐌𝐞
-┃🎀 : wa.me/94771323434
+┃🎀 : wa.me/6282194424412
 ┃🎀 : Instagram : *@Zyee_ez*
 ┗━━⬣ `, `${global.footer}`, btns)
 }
@@ -8128,7 +8338,7 @@ GOPAY : CHAT OWNER
 DANA : CHAT OWNER 
 OVO : CHAT OWNER
 
-wa.me/94771323434
+wa.me/6282194424412
  `, `Silahkan Pilih Payment Kak`, btns)
 }
 break
@@ -8138,7 +8348,7 @@ break
 
 
 
-           */
+           
 
 
 
