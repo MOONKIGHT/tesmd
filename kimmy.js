@@ -404,7 +404,7 @@ if (budy.includes('https://chat.whatsapp.com/')) {
         hisoka.ev.emit('messages.upsert', msg)
         }
 	    
-	/*if (('family100'+m.chat in _family100) && isCmd) {
+	if (('family100'+m.chat in _family100) && isCmd) {
             kuis = true
             let room = _family100['family100'+m.chat]
             let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
@@ -721,7 +721,7 @@ reply(mess.wait)
                     ini_txt += `Isya : ${get_result.isya}`
                     reply(ini_txt)
                     break
-                    */
+                    
 
                     // Downloader //
                 
