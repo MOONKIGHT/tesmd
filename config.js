@@ -51,7 +51,7 @@ global.sessionName = 'takim'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 
-global.setmenu = 'simpel'
+global.setmenu = 'gif'
 
 global.mess = {
     success: '✓ S u c c e s s',
