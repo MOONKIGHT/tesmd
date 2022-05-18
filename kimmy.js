@@ -3954,9 +3954,10 @@ case 'cecan': {
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
                 }
                 break
-/*
+	
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-            case 'wallpaper': {
+          /*  case 'wallpaper': {
                 if (!text) throw 'Mau Cari Walpaper apakak?'
 		let { wallpaper } = require('./lib/scraper')
                 anu = await wallpaper(text)
