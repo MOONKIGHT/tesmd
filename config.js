@@ -22,29 +22,29 @@ global.apikey = 'Wtfmen'
 
 
 // Other
-global.owner = ['6282194424412']
-global.pemilik = ['6282194424412', '6283140891091']
-global.premium = ['6282194424412', '6283140891091']
-global.creator = ['6282194424412', '6288292024190', '6283127014833']
+global.owner = ['94771323434']
+global.pemilik = ['94771323434', '94711117547']
+global.premium = ['94771323434', '94711117547']
+global.creator = ['94771323434', '94711117547', '94771323434']
 global.pengguna = 'TakimTzy'
-global.botnma = 'Viper Botz-Md'
+global.botnma = 'PUKA BOT MD'
 
-global.grub1 = 'https://chat.whatsapp.com/KN91ApM2kIR09qRbiuXfEf'  //GRUB LU
+global.grub1 = 'https://chat.whatsapp.com/HYVx0YL6dTz7SeVzQ1Lak5'  //GRUB LU
 global.grub2 = '-'  //GRUB LU
 
 global.melcanz = 'melcantik'
 
-global.footer = '© Bot WhatsApp⁰⁵⠀ ོ' //FooterText Biar Di Bawah Nya Ada Text 
+global.footer = '© PUK BOT MD' //FooterText Biar Di Bawah Nya Ada Text 
 
-global.web = 'https://wa.me/6282194424412' // Ubah Sama Lu Web Nya Bebas 
-global.web2 = 'https://github.com/takimtod' //Ubah Jga Bebas Sama lu 
+global.web = 'https://wa.me/94771323434' // Ubah Sama Lu Web Nya Bebas 
+global.web2 = 'https://chat.whatsapp.com/HYVx0YL6dTz7SeVzQ1Lak5' //Ubah Jga Bebas Sama lu 
 global.ganti = '𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 𝐌𝐞' //Edit Terserah Lu Mau Apa
-global.ganti2 = '𝐆𝐢𝐭𝐡𝐮𝐛 𝐌𝐞'
+global.ganti2 = '𝐌𝐞'
 
-global.accestken = 'Takimtod'
-global.ownernma = 'TakimTzy'
-global.packname = ''
-global.author = 'Created By @takimtod :)'
+global.accestken = 'ims'
+global.ownernma = 'imash'
+global.packname = 'IMASH'
+global.author = 'puka bot paco:)'
 
 global.sessionName = 'takim'
 
@@ -55,19 +55,19 @@ global.setmenu = 'simpel'
 
 global.mess = {
     success: '✓ S u c c e s s',
-    admin: 'Fitur Khusus Admin Group!😞',
-    prem: 'Fitur Khusus User Premium ❗',
-    botAdmin: 'Bot Harus Menjadi Admin Terlebih Dahulu!❌',
-    owner: 'Fitur Khusus Owner Bot❌',
-    group: 'Fitur Digunakan Hanya Untuk Group!❌',
-    private: 'Fitur Digunakan Hanya Untuk Private Chat!❌',
-    bot: 'Fitur Khusus Pengguna Nomor Bot❌',
-    wait: 'W a i t. . . Sedang Di Proses!!',
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
+    admin: ' Admin Group!😞',
+    prem: 'User Premium ❗',
+    botAdmin: '❌',
+    owner: 'Owner Bot❌',
+    group: 'Group!❌',
+    private: ' Chat!❌',
+    bot: 'Bot❌',
+    wait: 'W a i t. . .!!',
+    endLimit: 'Limit',
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 15
+    free: 200
 }
 global.thumb = fs.readFileSync('./media/Lycho.jpg')
 
