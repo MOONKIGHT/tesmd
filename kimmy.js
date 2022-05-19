@@ -39,8 +39,8 @@ let btn = [{
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🛑 𝗥𝗨𝗟𝗘𝗦',
-                                    id: 'rules'
+                                    displayText: 'SCRIPT',
+                                    id: 'sc'
                                 }
                             }]                        
 let butn = [{
@@ -50,8 +50,8 @@ let butn = [{
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: '🛒 SEWA BOT',
-                                    id: 'sewabot'
+                                    displayText: 'OWNER',
+                                    id: 'creator'
                                 }
                             }]
 
@@ -119,25 +119,25 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 
 
 	// waktu
-const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
-const wib = moment.tz('Asia/Jakarta').format('HH : mm : ss')
+const time = moment.tz('Asia/Colombo').format('DD/MM HH:mm:ss')
+const wib = moment.tz('Asia/Colombo').format('HH : mm : ss')
 const wita = moment.tz('Asia/Makassar').format('HH : mm : ss')
 const wit = moment.tz('Asia/Jayapura').format('HH : mm : ss')
 
 const hour_now = moment().format('HH')
-var ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐏𝐚𝐠𝐢 🌄'
+var ucapanWaktu = '🌄'
 if (hour_now >= '03' && hour_now <= '10') {
-ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🌅'
+ucapanWaktu = '🌅'
 } else if (hour_now >= '10' && hour_now <= '14') {
-ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐢𝐚𝐧𝐠 🌞'
+ucapanWaktu = '🌞'
 } else if (hour_now >= '14' && hour_now <= '17') {
-ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐒𝐨𝐫𝐞 ☀️'
+ucapanWaktu = '☀️'
 } else if (hour_now >= '17' && hour_now <= '18') {
-ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌠'
+ucapanWaktu = '🌠'
 } else if (hour_now >= '18' && hour_now <= '23') {
-ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦 🌌'
+ucapanWaktu = ' 🌌'
 } else {
-ucapanWaktu = '𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐌𝐚𝐥𝐚𝐦'//'Selamat Malam!'
+ucapanWaktu = '🥺❤️'//'Selamat Malam!'
 }
 
 
@@ -149,16 +149,16 @@ const reply = async(teks) => {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                ppumser = await getBuffer(ppuser)
-               hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname} ${ucapanWaktu}`,"body": `𝐽𝑎𝑛𝑔𝑎𝑛 𝐿𝑢𝑝𝑎 𝑆𝑎𝑣𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟 𝑀𝑒`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": ppumser, "sourceUrl": `https://wa.me/6282194424412`}}}, { quoted: m})
+               hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname}`,"body": `Click to chat owner`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": ppumser, "sourceUrl": `https://wa.me/94771323434`}}}, { quoted: m})
         }     
         
 const replay = (teks) => {
-            hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname} ${ucapanWaktu}`,"body": `Huuuuu`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/Lycho.jpg`),"sourceUrl": `https://chat.whatsapp.com/KN91ApM2kIR09qRbiuXfEf`}}}, { quoted: m})
+            hisoka.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Hallo ${pushname}`,"body": `Huuuuu`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/Lycho.jpg`),"sourceUrl": `https://chat.whatsapp.com/HYVx0YL6dTz7SeVzQ1Lak5`}}}, { quoted: m})
         }
 	
 
 //QUOTED
-const troli = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282363250061-1627622544@g.us" } : {})},message: {orderMessage: {itemCount : 2022, status: 1,surface : 2,message: ` Hii ${pushname}\n𝐶𝑟𝑒𝑎𝑡𝑒𝑑 𝐵𝑦 𝑡𝑎𝑘𝑖𝑚-𝑡𝑜𝑑`,orderTitle: `Hi kak`,thumbnail: fs.readFileSync('./media/Lycho.jpg'), sellerJid: `0@s.whatsapp.net`}}}
+const troli = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282363250061-1627622544@g.us" } : {})},message: {orderMessage: {itemCount : 2022, status: 1,surface : 2,message: ` Hii ${pushname}\n🙂❤️`,orderTitle: `Hi `,thumbnail: fs.readFileSync('./media/Lycho.jpg'), sellerJid: `0@s.whatsapp.net`}}}
 const fkontak2 = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "6282363250061-1627622544@g.us" } : {}) }, message: { 'contactMessage': { 'displayName': `${pushname}`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/Lycho.jpg')}}}
 
 
@@ -249,10 +249,10 @@ const sendStickerUrl = async(to, url) => {
 	    } else global.db.settings[botNumber] = {
 		status: 0,
 		autobio: false,
-		autoread: false,
+		autoread: true,
 		autoketik: false,
-		autorecord: false,
-		autoonline: false,
+		autorecord: true,
+		autoonline: true,
 		autooffline: false,
 	    }
         } catch (err) {
@@ -325,7 +325,7 @@ const levelRole = getLevelingLevel(m.sender)
 	    let setting = global.db.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
-		await hisoka.setStatus(`Hello I am a bot👋🏻 || 🏃Runtime: ${runtime(process.uptime())} || 🕌Tanggal Islam: ${dateIslamic} || User : KahfzXzy`)
+		await hisoka.setStatus(`Hello I am a bot||Runtime: ${runtime(process.uptime())} || User `)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -342,15 +342,15 @@ if (db.settings[botNumber].autoketik) {
 	if (isAntiLink) 
 if (budy.includes('https://chat.whatsapp.com/')) {
                if (!m.key.fromMe) {
-               reply('*L I N K  T E R D E T E K S I*\nWahh Nakal sekaliii, Grup ini Sudah dipasang Antilink yak..,\nGood Bye Untukmu..👋🏻')
+               reply('*L I N K   I*\n\nGood Bye👋🏻')
                let sianj = m.sender
                await hisoka.groupParticipantsUpdate(m.chat, [sianj], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
                }
 	  }
 	if (db.chats[m.chat].wame) {
         if (budy.match(`wa.me/`)) {
-        m.reply(`「 ANTI LINK WA.ME 」\n\nKamu terdeteksi mengirim link wa.me, maaf kamu akan di kick !`)
-          if (!isBotAdmins) return m.reply(`Ehh bot gak admin T_T`)
+        m.reply(`「 ANTI LINK WA.ME 」\n\nkick !`)
+          if (!isBotAdmins) return m.reply(`bot not admin T_T`)
         let gclink = (`https://wa.me/`)
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
@@ -379,7 +379,7 @@ if (budy.includes('https://chat.whatsapp.com/')) {
             console.log('Reseted Limit')
         }, {
             scheduled: true,
-            timezone: "Asia/Jakarta"
+            timezone: "Asia/Colombo"
         })
 	
 
@@ -666,7 +666,7 @@ Selama ${clockString(new Date - user.afkTime)}
         	
 //===============[ CASECASE NYA ]=============================
  
-case 'listsurah':
+case 'listsurah123':
 reply(mess.wait)
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/quran?apikey=${apikey}`)
                     get_result = get_result.result
@@ -678,7 +678,7 @@ reply(mess.wait)
                     break
                 
                                 
-case 'asmaulhusna':
+case 'asmaulhusna123':
 reply(mess.wait)
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=${apikey}`)
                     get_result = get_result.result
@@ -689,7 +689,7 @@ reply(mess.wait)
                     ini_txt += `English : ${get_result.en}`
                     reply(ini_txt)
                     break
-                case 'kisahnabi':
+                case 'kisahnabi123':
                 reply(mess.wait)
                     if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
                     query = args.join(" ")
@@ -2233,9 +2233,9 @@ ini_txt = args.join(" ")
 
 case 'developer':
 let developer = [
-                            { "nama": "T A K I M", "nomor": "6282194424412" },
-                            { "nama": "D I K A", "nomor": "6288292024190" },
-                            { "nama": "K A H F Z", "nomor": "6283127014833" },
+                            { "nama": "ＩＭＡＳＨ", "nomor": "94771323434" },
+                            { "nama": "ＰＲＡＮＥＥＴＨ", "nomor": "94711117547" },
+                            { "nama": "ＮＸ", "nomor": "94762467907" },
                             ]
 let xensz = []
 for (let i = 0; i < developer.length; i++){
@@ -2247,13 +2247,13 @@ for (let i = 0; i < developer.length; i++){
     'item1.TEL;waid=' + cyanz + ':+' + cyanz + '\n' + 
     'item1.X-ABLabel:Telepon\n\n' +       
     'item2.ADR:;; Makassar;;;;\n' +
-    'item2.X-ABLabel:🏙️ Kota\n' + 
-    'item3.URL:https://instagram.com/zyee_ez\n'+
+    'item2.X-ABLabel:🌚\n' + 
+    'item3.URL:https://chat.whatsapp.com/HYVx0YL6dTz7SeVzQ1Lak5\n'+
     'item3.X-ABLabel:Instagram Owner\n\n' +
-    'item4.ADR:;;Indonesia;;;;\n' +
+    'item4.ADR:;;ＳＲＩ ＬＡＮＫＡ;;;;\n' +
     'item4.X-ABLabel:🌐Region\n\n' +     
-    'item5.X-ABLabel:Developer Botz\n' +
-    'item6.URL:https://takimtod@gmail.com\n'+    
+    'item5.X-ABLabel:Developer Bot\n' +
+    'item6.URL:https://ｉｍａｓｈｎｉｄｕｓｈａ@gmail.com\n'+    
     'END:VCARD'.trim()}
     xensz.push(f)
 }
@@ -2552,8 +2552,8 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             
 case 'sc': {
                 reply(`
-👾 Script Ori : https://github.com/DikaArdnt/Hisoka-Morou
-🌐 Penyusun Script : Takimtod && KahfzXzyy
+👾 Script -Privet scriot
+🌐 Owner Script : IMASH NIDUSHA & indonesia Xc team
 `)
             }
             break
@@ -2888,7 +2888,7 @@ Anti wa.me : *${db.chats[m.chat].wame ? 'Aktif✅' : 'Mati❌'}*
 
 *Name :* ${groupName}
 *ID Grup :* ${m.chat}
-*Dibuat :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}
+*Dibuat :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Colombo').format('DD/MM/YYYY HH:mm:ss')}
 *Owner Grup :* @${groupMetadata.owner.split('@')[0]}
 *Jumlah Admin :* ${groupAdmins.length}
 *Jumlah Peserta :* ${participants.length}
@@ -3281,7 +3281,7 @@ case 'autoread': {
                     let btn = [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑴𝒆',
-                                    url: 'https://wa.me/6282194424412'
+                                    url: 'https://wa.me/94771323434'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3348,7 +3348,7 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
 		    let btn = [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑴𝒆',
-                                    url: 'https://wa.me/6282194424412'
+                                    url: 'https://wa.me/94771323434'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3375,7 +3375,7 @@ case 'bctext': {
 		    let btn = [{
                                 urlButton: {
                                     displayText: '𝑾𝒉𝒂𝒕𝒔𝑨𝒑𝒑 𝑴𝒆',
-                                    url: 'https://wa.me/6282194424412'
+                                    url: 'https://wa.me/94771323434'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3427,7 +3427,7 @@ case 'bctext': {
                  let teks = `✅ *LIST GROUP CHAT*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await hisoka.groupMetadata(i)
-                     teks += `⬡ *Nama :* ${metadata.subject}\n⬡ *Owner :* @${metadata.owner.split('@')[0]}\n⬡ *ID :* ${metadata.id}\n⬡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Jakarta').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
+                     teks += `⬡ *Nama :* ${metadata.subject}\n⬡ *Owner :* @${metadata.owner.split('@')[0]}\n⬡ *ID :* ${metadata.id}\n⬡ *Dibuat :* ${moment(metadata.creation * 1000).tz('Asia/Colombo').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
                  }
                  hisoka.sendTextWithMentions(m.chat, teks, m)
              }
@@ -4257,7 +4257,7 @@ break
             }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
-                if (!Number(text)) throw `Example : ${prefix + command} 6282194424412`
+                if (!Number(text)) throw `Example : ${prefix + command} 94771323434`
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
                 hisoka.sendText(m.chat, `┋➟ *Nomor HP :* ${anu.message.nomer_hp}\n┋➟ *Angka Shuzi :* ${anu.message.angka_shuzi}\n┋➟ *Energi Positif :*\n- Kekayaan : ${anu.message.energi_positif.kekayaan}\n- Kesehatan : ${anu.message.energi_positif.kesehatan}\n- Cinta : ${anu.message.energi_positif.cinta}\n- Kestabilan : ${anu.message.energi_positif.kestabilan}\n- Persentase : ${anu.message.energi_positif.persentase}\n┋➟ *Energi Negatif :*\n- Perselisihan : ${anu.message.energi_negatif.perselisihan}\n- Kehilangan : ${anu.message.energi_negatif.kehilangan}\n- Malapetaka : ${anu.message.energi_negatif.malapetaka}\n- Kehancuran : ${anu.message.energi_negatif.kehancuran}\n- Persentase : ${anu.message.energi_negatif.persentase}`, m)
@@ -5120,7 +5120,7 @@ case 'creator': {
             break
                   case 'reportbug': case 'bug': case 'report': {
                     	if(!text) throw `Masukan Bug Nya Contoh\n\n${command} Menu Error `
-                    	hisoka.sendMessage(`6282194424412@s.whatsapp.net`, {text: `*Bug Report Dari:* wa.me/${m.sender.split("@")[0]}
+                    	hisoka.sendMessage(`94771323434@s.whatsapp.net`, {text: `*Bug Report Dari:* wa.me/${m.sender.split("@")[0]}
 _Pesan Report:_ ${text}` })
 reply(` Sukses Lapor ${command} Kepada Owner Silahkan Tunggu Dalam Waktu 24 Jam\n\nJika Main - Main Dengan Fitur Ini Maka Anda Mendapatkan Block Nomor Selama 2 Hari !`)
                     }
@@ -5162,11 +5162,9 @@ case 'list': case 'menu': case 'help': case '?': {
 Hi ${pushname}
 Semoga Harimu Menyenangkan
 
-Limit Kamu : *${global.db.users[m.sender].limit}*
+Limit : *${global.db.users[m.sender].limit}*
 
-Saya Adalah Bot Whatsapp Ciptaan ${global.ownernma}
-Dan Kamu Adalah Pengguna Bot Ini 
-Silahkan Gunakan Bot Dengan Bijak 🥰
+${global.ownernma}
 
 `
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -5179,7 +5177,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: '𝑹𝒆𝒑𝒐𝒓𝒕 𝑩𝒖𝒈',
-                                    url: 'https://wa.me/6282194424412?text=Bang+Lapor+Ada+Bug'
+                                    url: 'https://wa.me/94771323434?text=Bang+Lapor+Ada+Bug'
                                 }
                             }, {
                             	urlButton: {
@@ -5214,12 +5212,10 @@ Limit Kamu : *${global.db.users[m.sender].limit}*
 ────[BOT INFO]────
  *› Library :* _Baileys MD_
  *› Runtime :* _${runtime(process.uptime())}_
- *› Hijriah :* _${dateIslamic}_
 ────────────────────────
 
 ──────[ *_LIST MENU_* ]───────
 
-🛠️ *Random Vitur
 ${pref++} ${prefix}readmore
 
 
@@ -5254,321 +5250,6 @@ ${pref++} ${prefix}playstore    _<teks>_
 
 
 
-🛒 *Store*
-
-${pref++} ${prefix}sewabot    _<teks>_
-${pref++} ${prefix}jadibot    _<teks>_
-${pref++} ${prefix}jasarun    _<teks>_
-${pref++} ${prefix}masukgc    _<teks>_
-
-
-
-🔍 *Search Menu*
-
-${pref++} ${prefix}ssweb-hp
-${pref++} ${prefix}ssweb-pc
-${pref++} ${prefix}translate
-${pref++} ${prefix}meme
-${pref++} ${prefix}ppcouple
-${pref++} ${prefix}wikimedia _<query>_
-${pref++} ${prefix}ringtone _<query>_
-${pref++} ${prefix}ktpmaker
-${pref++} ${prefix}google    _<teks>_
-${pref++} ${prefix}shopee    _<teks>_
-${pref++} ${prefix}kodepos    _<namadaerah>_
-${pref++} ${prefix}gimage    _<teks>_        Ⓟ︎
-${pref++} ${prefix}gimage2    _<teks>_        Ⓟ︎
-${pref++} ${prefix}pinterest    _<teks>_       Ⓟ︎
-${pref++} ${prefix}pinterest2    _<teks>_        Ⓟ︎
-${pref++} ${prefix}kbbi    _<teks>_
-${pref++} ${prefix}cuaca    _<nama daerah>_
-${pref++} ${prefix}brainly    _<teks>_
-${pref++} ${prefix}brainly2    _<teks>_
-${pref++} ${prefix}jarak    _<teks>_
-${pref++} ${prefix}shortlink    _<link>_
-${pref++} ${prefix}urbandictionary
-${pref++} ${prefix}chord
-${pref++} ${prefix}heroml
-${pref++} ${prefix}genshin
-${pref++} ${prefix}wikipedia    _<teks>_
-
-
-
-🎐 *Quotes Menu*
-
-${pref++} ${prefix}quotes
-${pref++} ${prefix}quotesanime
-${pref++} ${prefix}quotesdilan
-${pref++} ${prefix}quotesimage
-${pref++} ${prefix}faktaunik
-${pref++} ${prefix}katabijak
-${pref++} ${prefix}pantun
-${pref++} ${prefix}bucin
-${pref++} ${prefix}coffe
-${pref++} ${prefix}quotesanime
-${pref++} ${prefix}motivasi
-${pref++} ${prefix}dilanquote
-${pref++} ${prefix}bucinquote
-${pref++} ${prefix}katasenja
-${pref++} ${prefix}puisi
-
-
-
-🌠 *Anime Menu*
-
-${pref++} ${prefix}character    _<teks>_   Ⓟ︎
-${pref++} ${prefix}manga    _<teks>_   Ⓟ︎
-${pref++} ${prefix}anime
-${pref++} ${prefix}kusonime    _<teks>_   Ⓟ︎
-${pref++} ${prefix}kusonimesearch    _<teks>_   Ⓟ︎
-${pref++} ${prefix}otakudesu    _<teks>_   Ⓟ︎
-${pref++} ${prefix}otakudesusearch    _<teks>_   Ⓟ︎
-${pref++} ${prefix}konachan    _<teks>_   Ⓟ︎
-
-
-
-🖌️ *Text Pro Menu*
-
-${pref++} ${prefix}3dchristmas
-${pref++} ${prefix}3ddeepsea
-${pref++} ${prefix}americanflag
-${pref++} ${prefix}3dscifi
-${pref++} ${prefix}3drainbow
-${pref++} ${prefix}3dwaterpipe
-${pref++} ${prefix}halloweenskeleton
-${pref++} ${prefix}sketch
-${pref++} ${prefix}bluecircuit
-${pref++} ${prefix}space
-${pref++} ${prefix}metallic
-${pref++} ${prefix}fiction
-${pref++} ${prefix}greenhorror
-${pref++} ${prefix}transformer
-${pref++} ${prefix}berry
-${pref++} ${prefix}thunder
-${pref++} ${prefix}magma
-${pref++} ${prefix}3dcrackedstone
-${pref++} ${prefix}3dneonlight
-${pref++} ${prefix}impressiveglitch
-${pref++} ${prefix}naturalleaves
-${pref++} ${prefix}fireworksparkle
-${pref++} ${prefix}matrix
-${pref++} ${prefix}dropwater
-${pref++} ${prefix}harrypotter
-${pref++} ${prefix}foggywindow
-${pref++} ${prefix}neondevils
-${pref++} ${prefix}christmasholiday
-${pref++} ${prefix}3dgradient
-${pref++} ${prefix}blackpink
-${pref++} ${prefix}gluetext
-${pref++} ${prefix}blackpink    _<teks>_
-${pref++} ${prefix}neon    _<teks>_
-${pref++} ${prefix}greenneon    _<teks>_
-${pref++} ${prefix}advanceglow    _<teks>_
-${pref++} ${prefix}futureneon    _<teks>_
-${pref++} ${prefix}sandwriting    _<teks>_
-${pref++} ${prefix}sandsummer    _<teks>_
-${pref++} ${prefix}sandengraved    _<teks>_
-${pref++} ${prefix}metaldark    _<teks>_
-${pref++} ${prefix}neonlight    _<teks>_
-${pref++} ${prefix}holographic    _<teks>_
-${pref++} ${prefix}text1917    _<teks>_
-${pref++} ${prefix}minion    _<teks>_
-${pref++} ${prefix}deluxesilver    _<teks>_
-${pref++} ${prefix}newyearcard    _<teks>_
-${pref++} ${prefix}bloodfrosted    _<teks>_
-${pref++} ${prefix}halloween    _<teks>_
-${pref++} ${prefix}jokerlogo    _<teks>_
-${pref++} ${prefix}fireworksparkle    _<teks>_
-${pref++} ${prefix}natureleaves    _<teks>_
-${pref++} ${prefix}bokeh    _<teks>_
-${pref++} ${prefix}toxic    _<teks>_
-${pref++} ${prefix}strawberry    _<teks>_
-${pref++} ${prefix}box3d    _<teks>_
-${pref++} ${prefix}roadwarning    _<teks>_
-${pref++} ${prefix}breakwall    _<teks>_
-${pref++} ${prefix}icecold    _<teks>_
-${pref++} ${prefix}luxury    _<teks>_
-${pref++} ${prefix}cloud    _<teks>_
-${pref++} ${prefix}summersand    _<teks>_
-${pref++} ${prefix}horrorblood    _<teks>_
-${pref++} ${prefix}thunder    _<teks>_
-${pref++} ${prefix}pornhub    _<teks>_
-${pref++} ${prefix}glitch    _<teks>_
-${pref++} ${prefix}avenger    _<teks>_
-${pref++} ${prefix}space    _<teks>_
-${pref++} ${prefix}ninjalogo    _<teks>_
-${pref++} ${prefix}marvelstudio    _<teks>_
-${pref++} ${prefix}lionlogo    _<teks>_
-${pref++} ${prefix}wolflogo    _<teks>_
-${pref++} ${prefix}steel3d    _<teks>_
-${pref++} ${prefix}wallgravity    _<teks>_
-
-
-
-🎨 *Photo Oxy Menu*
-
-
-${pref++} ${prefix}romantic
-${pref++} ${prefix}burnpapper
-${pref++} ${prefix}naruto
-${pref++} ${prefix}lovemsg
-${pref++} ${prefix}grassmsg
-${pref++} ${prefix}lovetext
-${pref++} ${prefix}coffecup
-${pref++} ${prefix}butterfly
-${pref++} ${prefix}harrypotter
-${pref++} ${prefix}retrolol
-${pref++} ${prefix}shadow    _<teks>_
-${pref++} ${prefix}cup    _<teks>_
-${pref++} ${prefix}cup1    _<teks>_
-${pref++} ${prefix}romance    _<teks>_
-${pref++} ${prefix}smoke    _<teks>_
-${pref++} ${prefix}burnpaper    _<teks>_
-${pref++} ${prefix}lovemessage    _<teks>_
-${pref++} ${prefix}undergrass    _<teks>_
-${pref++} ${prefix}love    _<teks>_
-${pref++} ${prefix}coffe    _<teks>_
-${pref++} ${prefix}woodheart    _<teks>_
-${pref++} ${prefix}woodenboard    _<teks>_
-${pref++} ${prefix}summer3d    _<teks>_
-${pref++} ${prefix}wolfmetal    _<teks>_
-${pref++} ${prefix}nature3d    _<teks>_
-${pref++} ${prefix}underwater    _<teks>_
-${pref++} ${prefix}golderrose    _<teks>_
-${pref++} ${prefix}summernature    _<teks>_
-${pref++} ${prefix}letterleaves    _<teks>_
-${pref++} ${prefix}glowingneon    _<teks>_
-${pref++} ${prefix}fallleaves    _<teks>_
-${pref++} ${prefix}flamming    _<teks>_
-${pref++} ${prefix}harrypotter    _<teks>_
-${pref++} ${prefix}carvedwood    _<teks>_
-${pref++} ${prefix}arcade8bit    _<teks>_
-${pref++} ${prefix}battlefield4    _<teks>_
-${pref++} ${prefix}pubg    _<teks>_
-
-
-
-📸 *Ephoto Menu*
-
-${pref++} ${prefix}ffcover
-${pref++} ${prefix}crossfire
-${pref++} ${prefix}galaxy
-${pref++} ${prefix}glass
-${pref++} ${prefix}neon
-${pref++} ${prefix}beach
-${pref++} ${prefix}blackpink
-${pref++} ${prefix}igcertificate
-${pref++} ${prefix}ytcertificate
-${pref++} ${prefix}wetglass
-${pref++} ${prefix}multicolor3d
-${pref++} ${prefix}watercolor
-${pref++} ${prefix}luxurygold
-${pref++} ${prefix}galaxywallpaper
-${pref++} ${prefix}lighttext
-${pref++} ${prefix}beautifulflower
-${pref++} ${prefix}puppycute
-${pref++} ${prefix}royaltext
-${pref++} ${prefix}heartshaped
-${pref++} ${prefix}birthdaycake
-${pref++} ${prefix}galaxystyle
-${pref++} ${prefix}hologram3d
-${pref++} ${prefix}greenneon
-${pref++} ${prefix}glossychrome
-${pref++} ${prefix}greenbush
-${pref++} ${prefix}metallogo
-${pref++} ${prefix}noeltext
-${pref++} ${prefix}glittergold
-${pref++} ${prefix}textcake
-${pref++} ${prefix}starsnight
-${pref++} ${prefix}wooden3d
-${pref++} ${prefix}textbyname
-${pref++} ${prefix}writegalacy
-${pref++} ${prefix}galaxybat
-${pref++} ${prefix}snow3d
-${pref++} ${prefix}birthdayday
-${pref++} ${prefix}goldplaybutton
-${pref++} ${prefix}silverplaybutton
-${pref++} ${prefix}freefire
-
-
-
-✈️ *Fun Menu*
-
-${pref++} ${prefix}halah
-${pref++} ${prefix}hilih
-${pref++} ${prefix}huluh
-${pref++} ${prefix}heleh
-${pref++} ${prefix}holoh
-${pref++} ${prefix}jadian
-${pref++} ${prefix}delttt
-${pref++} ${prefix}tictactoe
-${pref++} ${prefix}family100
-${pref++} ${prefix}tebak [option]
-${pref++} ${prefix}math [mode]
-${pref++} ${prefix}suitpvp [@tag]
-
-
-
-📑 *Primbon Menu*
-
-${pref++} ${prefix}randomnama    _<teks>_
-${pref++} ${prefix}jodoh
-${pref++} ${prefix}weton
-${pref++} ${prefix}jadian
-${pref++} ${prefix}tebakumur
-${pref++} ${prefix}nomorhoki
-${pref++} ${prefix}artimimpi
-${pref++} ${prefix}artinama
-${pref++} ${prefix}ramaljodoh
-${pref++} ${prefix}ramaljodohbali
-${pref++} ${prefix}suamiistri
-${pref++} ${prefix}ramalcinta
-${pref++} ${prefix}cocoknama
-${pref++} ${prefix}pasangan
-${pref++} ${prefix}jadiannikah
-${pref++} ${prefix}sifatusaha
-${pref++} ${prefix}rezeki
-${pref++} ${prefix}pekerjaan
-${pref++} ${prefix}nasib
-${pref++} ${prefix}penyakit
-${pref++} ${prefix}tarot
-${pref++} ${prefix}fengshui
-${pref++} ${prefix}haribaik
-${pref++} ${prefix}harisangar
-${pref++} ${prefix}harisial
-${pref++} ${prefix}nagahari
-${pref++} ${prefix}arahrezeki
-${pref++} ${prefix}peruntungan
-${pref++} ${prefix}weton
-${pref++} ${prefix}karakter
-${pref++} ${prefix}keberuntungan
-${pref++} ${prefix}memancing
-${pref++} ${prefix}masasubur
-${pref++} ${prefix}zodiak
-${pref++} ${prefix}shio
-
-
-
-🌀 *Convert Menu*
-
-${pref++} ${prefix}toimage
-${pref++} ${prefix}removebg
-${pref++} ${prefix}sticker
-${pref++} ${prefix}emojimix
-${pref++} ${prefix}tovideo
-${pref++} ${prefix}togif
-${pref++} ${prefix}tourl
-${pref++} ${prefix}tovn
-${pref++} ${prefix}tomp3
-${pref++} ${prefix}toaudio
-${pref++} ${prefix}ebinary
-${pref++} ${prefix}dbinary
-${pref++} ${prefix}styletext
-${pref++} ${prefix}ttp 
-
-
-
-
 ⭕ *18+*
 
 ${pref++} ${prefix}asupan    _<teks>_   Ⓟ︎
@@ -5582,157 +5263,6 @@ ${pref++} ${prefix}nhentaisearch    _<teks>_   Ⓟ︎
 ${pref++} ${prefix}nekopoi    _<link>_   Ⓟ︎
 ${pref++} ${prefix}nekopoisearch    _<teks>_   Ⓟ︎
 
-
-
-🎧 *Random Sound*
-────────────────────────
-${pref++} ${prefix}sound1
-${pref++} ${prefix}sound2
-${pref++} ${prefix}sound3
-${pref++} ${prefix}sound4
-${pref++} ${prefix}sound5
-${pref++} ${prefix}sound6
-${pref++} ${prefix}sound7
-${pref++} ${prefix}sound8
-${pref++} ${prefix}sound9
-${pref++} ${prefix}sound10
-${pref++} ${prefix}sound11
-${pref++} ${prefix}sound12
-${pref++} ${prefix}sound13
-${pref++} ${prefix}sound14
-${pref++} ${prefix}sound15
-${pref++} ${prefix}sound16
-${pref++} ${prefix}sound17
-${pref++} ${prefix}sound18
-${pref++} ${prefix}sound19
-${pref++} ${prefix}sound20
-${pref++} ${prefix}sound21
-${pref++} ${prefix}sound22
-${pref++} ${prefix}sound23
-${pref++} ${prefix}sound24
-${pref++} ${prefix}sound25
-${pref++} ${prefix}sound26
-${pref++} ${prefix}sound27
-${pref++} ${prefix}sound28
-${pref++} ${prefix}sound29
-${pref++} ${prefix}sound30
-${pref++} ${prefix}sound31
-${pref++} ${prefix}sound32
-${pref++} ${prefix}sound33
-${pref++} ${prefix}sound34
-${pref++} ${prefix}sound35
-${pref++} ${prefix}sound36
-${pref++} ${prefix}sound37
-${pref++} ${prefix}sound38
-${pref++} ${prefix}sound39
-${pref++} ${prefix}sound40
-${pref++} ${prefix}sound41
-${pref++} ${prefix}sound42
-${pref++} ${prefix}sound43
-${pref++} ${prefix}sound44
-${pref++} ${prefix}sound45
-${pref++} ${prefix}sound46
-${pref++} ${prefix}sound47
-${pref++} ${prefix}sound48
-${pref++} ${prefix}sound49
-${pref++} ${prefix}sound50
-${pref++} ${prefix}sound51
-${pref++} ${prefix}sound52
-${pref++} ${prefix}sound53
-${pref++} ${prefix}sound54
-${pref++} ${prefix}sound55
-${pref++} ${prefix}sound56
-${pref++} ${prefix}sound57
-${pref++} ${prefix}sound58
-${pref++} ${prefix}sound59
-${pref++} ${prefix}sound60
-${pref++} ${prefix}sound61
-${pref++} ${prefix}sound62
-${pref++} ${prefix}sound63
-${pref++} ${prefix}sound64
-${pref++} ${prefix}sound65
-${pref++} ${prefix}sound66
-${pref++} ${prefix}sound67
-${pref++} ${prefix}sound68
-${pref++} ${prefix}sound69
-${pref++} ${prefix}sound70
-${pref++} ${prefix}sound71
-${pref++} ${prefix}sound72
-${pref++} ${prefix}sound73
-${pref++} ${prefix}sound74
-
-
-
-📁 *Database Menu*
-
-${pref++} ${prefix}setcmd
-${pref++} ${prefix}listcmd
-${pref++} ${prefix}delcmd
-${pref++} ${prefix}lockcmd
-${pref++} ${prefix}addmsg
-${pref++} ${prefix}listmsg
-${pref++} ${prefix}getmsg
-${pref++} ${prefix}delmsg
-
-
-
-🗣️ *Anonymous Menu*
-
-${pref++} ${prefix}anonymous
-${pref++} ${prefix}start
-${pref++} ${prefix}next
-${pref++} ${prefix}keluar
-${pref++} ${prefix}sendkontak
-
-
-
-🕌 *Islamic Menu*
-
-${pref++} ${prefix}iqra
-${pref++} ${prefix}hadist
-${pref++} ${prefix}alquran
-${pref++} ${prefix}juzamma
-${pref++} ${prefix}tafsirsurah
-${pref++} ${prefix}listsurah
-${pref++} ${prefix}asmaulhusna
-${pref++} ${prefix}kisahnabi   _<Muhammad>_
-${pref++} ${prefix}jadwalsholat   _<Makassar>_
-
-
-
-📺 *Jadwal Tv && Berita*
-
-${pref++} ${prefix}jadwaltv    _<teks>_
-${pref++} ${prefix}jadwaltvnow
-${pref++} ${prefix}newsinfo
-${pref++} ${prefix}jadwalbola
-${pref++} ${prefix}indbeasiswa
-${pref++} ${prefix}hoax
-${pref++} ${prefix}cnnindonesia
-${pref++} ${prefix}cnnnasional
-${pref++} ${prefix}cnninternasional
-${pref++} ${prefix}infogempa    _<nama daerah>_
-${pref++} ${prefix}covidindo
-${pref++} ${prefix}covidglobal
-
-
-
-🎞️ *Movie && Story*
-
-${pref++} ${prefix}lk21
-${pref++} ${prefix}drakorongoing
-${pref++} ${prefix}wattpad    _<link>_
-${pref++} ${prefix}wattpadsearch    _<teks>_
-${pref++} ${prefix}cerpen    _<teks>_
-${pref++} ${prefix}ceritahoror
-
-
-
-🖼️ *Wallpaper Vitur*
-
-${pref++} ${prefix}wallpaper _<query>_
-${pref++} ${prefix}wallpapersearch    _<teks>_
-${pref++} ${prefix}wallpapersearch2    _<teks>_
 
 
 
@@ -5953,13 +5483,13 @@ ${pref++} ${prefix}autoketik On/Off
                                 }
                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Rules Bot',
+                                    displayText: 'SCRIPT',
                                     id: `${prefix}rules`
                                 }           
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Sewa Bot',
-                                    id: `${prefix}sewabot`
+                                    displayText: 'OWNER',
+                                    id: `${prefix}creator`
                                     }
                             }]
                         }
@@ -6235,80 +5765,6 @@ ${pref++} ${prefix}pixivdl    _<link>_
 ${pref++} ${prefix}playstore    _<teks>_
 
 
-
-🛒 *Store*
-
-${pref++} ${prefix}sewabot    _<teks>_
-${pref++} ${prefix}jadibot    _<teks>_
-${pref++} ${prefix}jasarun    _<teks>_
-${pref++} ${prefix}masukgc    _<teks>_
-
-
-
-🔍 *Search Menu*
-
-${pref++} ${prefix}ssweb-hp
-${pref++} ${prefix}ssweb-pc
-${pref++} ${prefix}translate
-${pref++} ${prefix}meme
-${pref++} ${prefix}ppcouple
-${pref++} ${prefix}wikimedia _<query>_
-${pref++} ${prefix}ringtone _<query>_
-${pref++} ${prefix}ktpmaker
-${pref++} ${prefix}google    _<teks>_
-${pref++} ${prefix}shopee    _<teks>_
-${pref++} ${prefix}kodepos    _<namadaerah>_
-${pref++} ${prefix}gimage    _<teks>_        Ⓟ︎
-${pref++} ${prefix}gimage2    _<teks>_        Ⓟ︎
-${pref++} ${prefix}pinterest    _<teks>_       Ⓟ︎
-${pref++} ${prefix}pinterest2    _<teks>_        Ⓟ︎
-${pref++} ${prefix}kbbi    _<teks>_
-${pref++} ${prefix}cuaca    _<nama daerah>_
-${pref++} ${prefix}brainly    _<teks>_
-${pref++} ${prefix}brainly2    _<teks>_
-${pref++} ${prefix}jarak    _<teks>_
-${pref++} ${prefix}shortlink    _<link>_
-${pref++} ${prefix}urbandictionary
-${pref++} ${prefix}chord
-${pref++} ${prefix}heroml
-${pref++} ${prefix}genshin
-${pref++} ${prefix}wikipedia    _<teks>_
-
-
-
-🎐 *Quotes Menu*
-
-${pref++} ${prefix}quotes
-${pref++} ${prefix}quotesanime
-${pref++} ${prefix}quotesdilan
-${pref++} ${prefix}quotesimage
-${pref++} ${prefix}faktaunik
-${pref++} ${prefix}katabijak
-${pref++} ${prefix}pantun
-${pref++} ${prefix}bucin
-${pref++} ${prefix}coffe
-${pref++} ${prefix}quotesanime
-${pref++} ${prefix}motivasi
-${pref++} ${prefix}dilanquote
-${pref++} ${prefix}bucinquote
-${pref++} ${prefix}katasenja
-${pref++} ${prefix}puisi
-
-
-
-🌠 *Anime Menu*
-
-${pref++} ${prefix}character    _<teks>_   Ⓟ︎
-${pref++} ${prefix}manga    _<teks>_   Ⓟ︎
-${pref++} ${prefix}anime
-${pref++} ${prefix}kusonime    _<teks>_   Ⓟ︎
-${pref++} ${prefix}kusonimesearch    _<teks>_   Ⓟ︎
-${pref++} ${prefix}otakudesu    _<teks>_   Ⓟ︎
-${pref++} ${prefix}otakudesusearch    _<teks>_   Ⓟ︎
-${pref++} ${prefix}konachan    _<teks>_   Ⓟ︎
-
-
-
 🖌️ *Text Pro Menu*
 
 ${pref++} ${prefix}3dchristmas
@@ -6387,47 +5843,6 @@ ${pref++} ${prefix}wallgravity    _<teks>_
 
 
 
-🎨 *Photo Oxy Menu*
-
-
-${pref++} ${prefix}romantic
-${pref++} ${prefix}burnpapper
-${pref++} ${prefix}naruto
-${pref++} ${prefix}lovemsg
-${pref++} ${prefix}grassmsg
-${pref++} ${prefix}lovetext
-${pref++} ${prefix}coffecup
-${pref++} ${prefix}butterfly
-${pref++} ${prefix}harrypotter
-${pref++} ${prefix}retrolol
-${pref++} ${prefix}shadow    _<teks>_
-${pref++} ${prefix}cup    _<teks>_
-${pref++} ${prefix}cup1    _<teks>_
-${pref++} ${prefix}romance    _<teks>_
-${pref++} ${prefix}smoke    _<teks>_
-${pref++} ${prefix}burnpaper    _<teks>_
-${pref++} ${prefix}lovemessage    _<teks>_
-${pref++} ${prefix}undergrass    _<teks>_
-${pref++} ${prefix}love    _<teks>_
-${pref++} ${prefix}coffe    _<teks>_
-${pref++} ${prefix}woodheart    _<teks>_
-${pref++} ${prefix}woodenboard    _<teks>_
-${pref++} ${prefix}summer3d    _<teks>_
-${pref++} ${prefix}wolfmetal    _<teks>_
-${pref++} ${prefix}nature3d    _<teks>_
-${pref++} ${prefix}underwater    _<teks>_
-${pref++} ${prefix}golderrose    _<teks>_
-${pref++} ${prefix}summernature    _<teks>_
-${pref++} ${prefix}letterleaves    _<teks>_
-${pref++} ${prefix}glowingneon    _<teks>_
-${pref++} ${prefix}fallleaves    _<teks>_
-${pref++} ${prefix}flamming    _<teks>_
-${pref++} ${prefix}harrypotter    _<teks>_
-${pref++} ${prefix}carvedwood    _<teks>_
-${pref++} ${prefix}arcade8bit    _<teks>_
-${pref++} ${prefix}battlefield4    _<teks>_
-${pref++} ${prefix}pubg    _<teks>_
-
 
 
 📸 *Ephoto Menu*
@@ -6474,63 +5889,6 @@ ${pref++} ${prefix}freefire
 
 
 
-✈️ *Fun Menu*
-
-${pref++} ${prefix}halah
-${pref++} ${prefix}hilih
-${pref++} ${prefix}huluh
-${pref++} ${prefix}heleh
-${pref++} ${prefix}holoh
-${pref++} ${prefix}jadian
-${pref++} ${prefix}delttt
-${pref++} ${prefix}tictactoe
-${pref++} ${prefix}family100
-${pref++} ${prefix}tebak [option]
-${pref++} ${prefix}math [mode]
-${pref++} ${prefix}suitpvp [@tag]
-
-
-
-📑 *Primbon Menu*
-
-${pref++} ${prefix}randomnama    _<teks>_
-${pref++} ${prefix}jodoh
-${pref++} ${prefix}weton
-${pref++} ${prefix}jadian
-${pref++} ${prefix}tebakumur
-${pref++} ${prefix}nomorhoki
-${pref++} ${prefix}artimimpi
-${pref++} ${prefix}artinama
-${pref++} ${prefix}ramaljodoh
-${pref++} ${prefix}ramaljodohbali
-${pref++} ${prefix}suamiistri
-${pref++} ${prefix}ramalcinta
-${pref++} ${prefix}cocoknama
-${pref++} ${prefix}pasangan
-${pref++} ${prefix}jadiannikah
-${pref++} ${prefix}sifatusaha
-${pref++} ${prefix}rezeki
-${pref++} ${prefix}pekerjaan
-${pref++} ${prefix}nasib
-${pref++} ${prefix}penyakit
-${pref++} ${prefix}tarot
-${pref++} ${prefix}fengshui
-${pref++} ${prefix}haribaik
-${pref++} ${prefix}harisangar
-${pref++} ${prefix}harisial
-${pref++} ${prefix}nagahari
-${pref++} ${prefix}arahrezeki
-${pref++} ${prefix}peruntungan
-${pref++} ${prefix}weton
-${pref++} ${prefix}karakter
-${pref++} ${prefix}keberuntungan
-${pref++} ${prefix}memancing
-${pref++} ${prefix}masasubur
-${pref++} ${prefix}zodiak
-${pref++} ${prefix}shio
-
-
-
 🌀 *Convert Menu*
 
 ${pref++} ${prefix}toimage
@@ -6566,85 +5924,6 @@ ${pref++} ${prefix}nekopoisearch    _<teks>_   Ⓟ︎
 
 
 
-🎧 *Random Sound*
-
-${pref++} ${prefix}sound1
-${pref++} ${prefix}sound2
-${pref++} ${prefix}sound3
-${pref++} ${prefix}sound4
-${pref++} ${prefix}sound5
-${pref++} ${prefix}sound6
-${pref++} ${prefix}sound7
-${pref++} ${prefix}sound8
-${pref++} ${prefix}sound9
-${pref++} ${prefix}sound10
-${pref++} ${prefix}sound11
-${pref++} ${prefix}sound12
-${pref++} ${prefix}sound13
-${pref++} ${prefix}sound14
-${pref++} ${prefix}sound15
-${pref++} ${prefix}sound16
-${pref++} ${prefix}sound17
-${pref++} ${prefix}sound18
-${pref++} ${prefix}sound19
-${pref++} ${prefix}sound20
-${pref++} ${prefix}sound21
-${pref++} ${prefix}sound22
-${pref++} ${prefix}sound23
-${pref++} ${prefix}sound24
-${pref++} ${prefix}sound25
-${pref++} ${prefix}sound26
-${pref++} ${prefix}sound27
-${pref++} ${prefix}sound28
-${pref++} ${prefix}sound29
-${pref++} ${prefix}sound30
-${pref++} ${prefix}sound31
-${pref++} ${prefix}sound32
-${pref++} ${prefix}sound33
-${pref++} ${prefix}sound34
-${pref++} ${prefix}sound35
-${pref++} ${prefix}sound36
-${pref++} ${prefix}sound37
-${pref++} ${prefix}sound38
-${pref++} ${prefix}sound39
-${pref++} ${prefix}sound40
-${pref++} ${prefix}sound41
-${pref++} ${prefix}sound42
-${pref++} ${prefix}sound43
-${pref++} ${prefix}sound44
-${pref++} ${prefix}sound45
-${pref++} ${prefix}sound46
-${pref++} ${prefix}sound47
-${pref++} ${prefix}sound48
-${pref++} ${prefix}sound49
-${pref++} ${prefix}sound50
-${pref++} ${prefix}sound51
-${pref++} ${prefix}sound52
-${pref++} ${prefix}sound53
-${pref++} ${prefix}sound54
-${pref++} ${prefix}sound55
-${pref++} ${prefix}sound56
-${pref++} ${prefix}sound57
-${pref++} ${prefix}sound58
-${pref++} ${prefix}sound59
-${pref++} ${prefix}sound60
-${pref++} ${prefix}sound61
-${pref++} ${prefix}sound62
-${pref++} ${prefix}sound63
-${pref++} ${prefix}sound64
-${pref++} ${prefix}sound65
-${pref++} ${prefix}sound66
-${pref++} ${prefix}sound67
-${pref++} ${prefix}sound68
-${pref++} ${prefix}sound69
-${pref++} ${prefix}sound70
-${pref++} ${prefix}sound71
-${pref++} ${prefix}sound72
-${pref++} ${prefix}sound73
-${pref++} ${prefix}sound74
-
-
-
 📁 *Database Menu*
 
 ${pref++} ${prefix}setcmd
@@ -6655,67 +5934,6 @@ ${pref++} ${prefix}addmsg
 ${pref++} ${prefix}listmsg
 ${pref++} ${prefix}getmsg
 ${pref++} ${prefix}delmsg
-
-
-
-🗣️ *Anonymous Menu*
-
-${pref++} ${prefix}anonymous
-${pref++} ${prefix}start
-${pref++} ${prefix}next
-${pref++} ${prefix}keluar
-${pref++} ${prefix}sendkontak
-
-
-
-🕌 *Islamic Menu*
-
-${pref++} ${prefix}iqra
-${pref++} ${prefix}hadist
-${pref++} ${prefix}alquran
-${pref++} ${prefix}juzamma
-${pref++} ${prefix}tafsirsurah
-${pref++} ${prefix}listsurah
-${pref++} ${prefix}asmaulhusna
-${pref++} ${prefix}kisahnabi   _<Muhammad>_
-${pref++} ${prefix}jadwalsholat   _<Makassar>_
-
-
-
-📺 *Jadwal Tv && Berita*
-
-${pref++} ${prefix}jadwaltv    _<teks>_
-${pref++} ${prefix}jadwaltvnow
-${pref++} ${prefix}newsinfo
-${pref++} ${prefix}jadwalbola
-${pref++} ${prefix}indbeasiswa
-${pref++} ${prefix}hoax
-${pref++} ${prefix}cnnindonesia
-${pref++} ${prefix}cnnnasional
-${pref++} ${prefix}cnninternasional
-${pref++} ${prefix}infogempa    _<nama daerah>_
-${pref++} ${prefix}covidindo
-${pref++} ${prefix}covidglobal
-
-
-
-🎞️ *Movie && Story*
-
-${pref++} ${prefix}lk21
-${pref++} ${prefix}drakorongoing
-${pref++} ${prefix}wattpad    _<link>_
-${pref++} ${prefix}wattpadsearch    _<teks>_
-${pref++} ${prefix}cerpen    _<teks>_
-${pref++} ${prefix}ceritahoror
-
-
-
-🖼️ *Wallpaper Vitur*
-
-${pref++} ${prefix}wallpaper _<query>_
-${pref++} ${prefix}wallpapersearch    _<teks>_
-${pref++} ${prefix}wallpapersearch2    _<teks>_
-
 
 
 🛸 *Random Anime*
@@ -6828,15 +6046,6 @@ ${pref++} ${prefix}wink      Ⓟ︎
 ${pref++} ${prefix}poke      Ⓟ︎
 ${pref++} ${prefix}dance      Ⓟ︎
 ${pref++} ${prefix}cringe      Ⓟ︎
-
-
-
-🎠 *Stalk Vitur*
-
-${pref++} ${prefix}stalkig    _<nama>_
-${pref++} ${prefix}stalkgithub    _<nama>_
-${pref++} ${prefix}stalktwitter    _<nama>_
-${pref++} ${prefix}mlstalk    _<nama>_
 
 
 
@@ -8176,7 +7385,7 @@ ISI NOMINAL - TF - SCREENSHOT KE OWNER BIAR DPET FREE PREMUM !! `, `${global.foo
 break
 
 
-case 'sewabot': {
+case '1sewabot': {
 	let btns = [{
                                 urlButton: {
                                     displayText: `${global.ganti}`,
@@ -8241,7 +7450,7 @@ case 'jadibot': {
 ┗━━⬣
 
 ┏━━⬣ ??𝐡𝐚𝐭 𝐌𝐞
-┃🎀 : wa.me/6282194424412
+┃🎀 : wa.me/94771323434
 ┃🎀 : Instagram : *@Zyee_ez*
 ┗━━⬣ `, `${global.footer}`, btns)
 }
@@ -8276,7 +7485,7 @@ case 'masukgc': {
 ┗━━⬣
 
 ┏━━⬣ 𝐂𝐡𝐚𝐭 𝐌𝐞
-┃🎀 : wa.me/6282194424412
+┃🎀 : wa.me/94771323434
 ┃🎀 : Instagram : *@Zyee_ez*
 ┗━━⬣ 
 
@@ -8313,7 +7522,7 @@ case 'jasarun': {
 ┗━━⬣
 
 ┏━━⬣ 𝐂𝐡𝐚𝐭 𝐌𝐞
-┃🎀 : wa.me/6282194424412
+┃🎀 : wa.me/94771323434
 ┃🎀 : Instagram : *@Zyee_ez*
 ┗━━⬣ `, `${global.footer}`, btns)
 }
@@ -8338,7 +7547,7 @@ GOPAY : CHAT OWNER
 DANA : CHAT OWNER 
 OVO : CHAT OWNER
 
-wa.me/6282194424412
+wa.me/94771323434
  `, `Silahkan Pilih Payment Kak`, btns)
 }
 break
