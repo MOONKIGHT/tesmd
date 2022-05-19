@@ -129,7 +129,7 @@ Di Grub ${metadata.subject}
 let btn = [{                           
                                 urlButton: {
                                     displayText: 'WhatsApp-Me',
-                                    url: 'https://wa.me/6282194424412'
+                                    url: 'https://wa.me/94771323434'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -146,7 +146,7 @@ let btn = [{
 let bton = [{
                                 urlButton: {
                                     displayText: 'WhatsApp-Me',
-                                    url: 'https://wa.me/6282194424412'
+                                    url: 'https://wa.me/94772323434'
                                 }
                             }, {
                                 quickReplyButton: {
