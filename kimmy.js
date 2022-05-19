@@ -7451,7 +7451,7 @@ case 'jadibot': {
 
 ┏━━⬣ ??𝐡𝐚𝐭 𝐌𝐞
 ┃🎀 : wa.me/94771323434
-┃🎀 : Instagram : *@Zyee_ez*
+┃🎀 : Instagram : *@imash_nidu*
 ┗━━⬣ `, `${global.footer}`, btns)
 }
 break
@@ -7486,7 +7486,7 @@ case 'masukgc': {
 
 ┏━━⬣ 𝐂𝐡𝐚𝐭 𝐌𝐞
 ┃🎀 : wa.me/94771323434
-┃🎀 : Instagram : *@Zyee_ez*
+┃🎀 : Instagram : *@imash_nidu*
 ┗━━⬣ 
 
 ┏━━⬣ 𝐒𝐢𝐬𝐭𝐞𝐦 𝐌𝐞
@@ -7523,7 +7523,7 @@ case 'jasarun': {
 
 ┏━━⬣ 𝐂𝐡𝐚𝐭 𝐌𝐞
 ┃🎀 : wa.me/94771323434
-┃🎀 : Instagram : *@Zyee_ez*
+┃🎀 : Instagram : *@imash_nidu*
 ┗━━⬣ `, `${global.footer}`, btns)
 }
 break
